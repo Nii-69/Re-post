@@ -119,7 +119,10 @@ a {
     color: rgb(41, 5, 245);
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -271,6 +274,7 @@ h4 {
     color: black;
 
 }
+
 
 
 
