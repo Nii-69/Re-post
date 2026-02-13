@@ -14,7 +14,7 @@ a {
     justify-content: space-around;
     align-items: center;
     z-index: 100;
-/*animation de la barre*/
+/*✨ animation de la barre*/
     opacity: 0;
     transform: translateY(-40px);
     animation: navAppear 0.8s ease forwards;
@@ -51,7 +51,7 @@ a {
 
 
 
-/*animation des écritures sur l'accueil*/
+/*🔥 animation des écritures sur l'accueil*/
 * .slider-content h1,
 .slider-content p {
     opacity: 0;
@@ -80,19 +80,7 @@ a {
 }
 /*Fin*/
 
-@media(max-width:500px) {
-    header {
-        display: none;
-    }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    .toColum {
-        flex-direction: column;
-    }
-}
 
 .nav .logo {
     font-size: 30px;
@@ -274,6 +262,7 @@ h4 {
     color: black;
 
 }
+
 
 
 
