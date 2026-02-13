@@ -16,7 +16,7 @@ a {
     z-index: 100;
     /*🔥 animation 
   ajouter*/
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-40px);
     animation: navAppear 1s ease forwards;
 }
@@ -272,4 +272,5 @@ h4 {
     color: black;
 
 }
+
 
