@@ -21,6 +21,17 @@ a {
     animation: navAppear 1s ease forwards;
 }
 
+.nav {
+    animation: navAppear 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+*@keyframes navAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 .slider {
@@ -261,3 +272,4 @@ h4 {
     color: black;
 
 }
+
