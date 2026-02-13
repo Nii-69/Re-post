@@ -176,6 +176,7 @@ p {
     font-weight: 100;
 }
 
+/*Pour faire diviser en case*/
 .section {
     padding: 100px;
 }
@@ -184,6 +185,7 @@ p {
     max-width: 12800px;
     margin-inline: auto;
 }
+/*FIN*/
 
 .flex {
     display: flex;
@@ -274,6 +276,7 @@ h4 {
     color: black;
 
 }
+
 
 
 
