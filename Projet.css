@@ -80,7 +80,19 @@ a {
 }
 /*Fin*/
 
+@media(max-width:500px) {
+    header {
+        display: none;
+    }
 
+    h1 {
+        font-size: 2rem;
+    }
+
+    .toColum {
+        flex-direction: column;
+    }
+}
 
 .nav .logo {
     font-size: 30px;
@@ -262,6 +274,7 @@ h4 {
     color: black;
 
 }
+
 
 
 
