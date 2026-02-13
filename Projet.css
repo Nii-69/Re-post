@@ -14,6 +14,11 @@ a {
     justify-content: space-around;
     align-items: center;
     z-index: 100;
+    /*🔥 animation 
+  ajouter*/
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: navAppear 1s ease forwards;
 }
 
 
@@ -254,4 +259,5 @@ footer {
 
 h4 {
     color: black;
+
 }
