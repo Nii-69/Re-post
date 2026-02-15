@@ -1,0 +1,107 @@
+body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(228, 227, 226);
+}
+
+.contenu{
+    width: 100%;
+}
+
+/*MENU DU SITE*/
+
+.menu{
+    width: 100%;
+    background-color: rgb(14, 12, rgb(49, 49, 77));
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    color: black;
+    padding: 30px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: "Montservat",sans-serif;
+    color: white;
+}
+
+.menu div {
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-raduis: 15px;
+    -moz-border-raduis: 15px;
+    -ms-border-raduis: 15px;
+    -o-border-raduis: 15px;
+}
+
+
+.menu div:hover {
+    background-color: rgb(255, 0,  0);
+}
+
+
+/*Corps*/
+
+.corps {
+    padding: 0 100px;
+}
+
+.titre {
+    text-align: center;
+    color: rgb(224, 105, 0);
+    margin: 40px 0;
+}
+
+
+/*presentation du cv*/
+
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 30px 0;
+    border-bottom: 20px solid black;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.image{
+    display: grid;
+    place-items: center;
+}
+
+.image img{
+    width: 300px;
+    border: 30px solid white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.propos{
+    text-align: center;
+}
+
+.propos h2{
+    font-size: 35px;
+    color: aqua;
+}
+
+.propos table td{
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.propos tr td:nth-child(){
+    padding-left: 50px;
+}
