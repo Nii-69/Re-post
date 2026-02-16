@@ -74,7 +74,31 @@
             width: 65%;
             padding: 40px;
         }
+/* La boîte qui contient tout le haut en violet */
+.header-content {
+    display: flex;             /* Active le mode côte à côte */
+    justify-content: space-around; /* Espace le texte et la photo */
+    align-items: center;       /* Aligne verticalement au milieu */
+    padding: 20px;
+    background: linear-gradient(to right, #8e44ad, #c39bd3); /* Votre dégradé */
+    color: white;
+}
 
+/* Style pour le texte */
+.header-text {
+    text-align: left;          /* Aligne le texte à gauche */
+    flex: 2;                   /* Donne plus d'espace au texte */
+}
+
+/* Style pour la photo */
+.header-photo img {
+    width: 120px;              /* Taille de la photo */
+    height: 120px;
+    border-radius: 50%;        /* Photo ronde */
+    border: 3px solid white;   /* Petit bord blanc élégant */
+    object-fit: cover;         
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
         .section {
             margin-bottom: 40px;
         }
@@ -270,5 +294,6 @@
     </div>
 </body>
 </html>
+
 
 
