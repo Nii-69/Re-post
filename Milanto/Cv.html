@@ -185,4 +185,103 @@
         }
 
         /* Responsive */
-        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-info {
+                margin-bottom: 20px;
+            }
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar, .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <div class="cv-logo">CV</div>
+            <div class="header-info">
+                <h1 class="name">ANDRIANAINA RAKOTOARISON<br>Milanto Francia</h1>
+                <p class="position">Développeur Web Fullstack</p>
+            </div>
+            <div class="header-photo">
+                <img src="Milanto.jpeg" alt="Milanto Francia">
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="section">
+                    <h2>Contact</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>Fianarantsoa, Madagascar</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <a href="https://wa.me/261331616492" class="contact-link" target="_blank">033 16 164 92</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <a href="mailto:milantofrancia@gmail.com" class="contact-link">milantofrancia@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Compétences</h2>
+                    <ul class="skills-list">
+                        <li><strong>Frontend :</strong> HTML5, CSS3, React.js</li>
+                        <li><strong>JS :</strong> JavaScript (ES6+)</li>
+                        <li><strong>Backend :</strong> Node.js</li>
+                        <li><strong>Outils :</strong> Git, SQL, NoSQL</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Langues</h2>
+                    <ul class="languages">
+                        <li>🇫🇷 Français : Courant</li>
+                        <li>🇬🇧 Anglais : Intermédiaire</li>
+                        <li>🇩🇪 Allemand : Notions</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div class="section">
+                    <h2>Profil</h2>
+                    <p class="profile-text">
+                        Étudiant de 18 ans à l'École de Management et d'Innovation Technologique (EMIT), je suis un passionné d'informatique et des technologies web. Développeur Fullstack junior, je m'efforce de concevoir des solutions numériques performantes, modernes et intuitives.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Expériences</h2>
+                    <div class="experience-item">
+                        <div class="job-title">Développeur Front-end | TechCorp</div>
+                        <div class="period">Janvier 2025 – Présent</div>
+                        <p>Conception et développement d'interfaces utilisateur modernes et réactives avec <strong>React.js</strong>.</p>
+                        <p>Optimisation de l'expérience utilisateur (UX) et intégration de maquettes graphiques.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Formation</h2>
+                    <div class="education-item">
+                        <div class="job-title">École de Management et d'Innovation Technologique (EMIT)</div>
+                        <div class="period">Cursus en Informatique / Développement</div>
+                        <p>Apprentissage des fondamentaux de l'algorithmique, des structures de données et de la gestion de projet.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+    </html>
+    
