@@ -3,47 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV en Ligne</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV - ANDRIANAINA RAKOTOARISON Milanto Francia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #674abb, #f093fb);
+            color: white;
+            padding: 40px;
+            position: relative;
+        }
+
+        .cv-logo {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 48px;
+            font-weight: bold;
+            color: rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .name {
+            font-size: 36px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .position {
+            font-size: 20px;
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            min-height: 800px;
+        }
+
+        .sidebar {
+            width: 35%;
+            background: #f8f9fa;
+            padding: 40px;
+            border-right: 1px solid #eee;
+        }
+
+        .content {
+            width: 65%;
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #674abb;
+            font-size: 24px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #f093fb;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            background: #674abb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .contact-link {
+            color: #f093fb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .skill-bar {
+            background: #eee;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #674abb, #f093fb);
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        .languages li {
+            margin-bottom: 10px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            color: #674abb;
+            margin-bottom: 5px;
+        }
+
+        .period {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .profile-text {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar, .content {
+                width: 100%;
+            }
+            .header {
+                padding: 20px;
+            }
+        }
+
+        .pencils {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            opacity: 0.3;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./Milanto.jpeg" height="300" alt="Photo">
-            <h1>ANDRIANAINA RAKOTOARISON <br> milanto francia</br> </h1>
-            <p class="subtitle">Développeur Web Fullstack</p>
-            <div class="contact-info">
-                <span>📧 milantofrancia@gailm.com</span> | <span>📍 Madagascare, Fianaratsoa</span> | <span>🔗 linkedin.com/in/pseudo</span>
-            </div>
-        </header>
+    <div class="cv-container">
+        <div class="header">
+            <div class="cv-logo">CV</div>
+            <div class="pencils">✏️ ✏️</div>
+            <h1 class="name">ANDRIANAINA RAKOTOARISON<br>Milanto Francia</h1>
+            <p class="position">Développeur Web Fullstack</p>
+        </div>
 
-        <section>
-            <h2>Profil</h2>
-            <p>Passionné par les technologies du web,informatique .</p>
-        </section>
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="section">
+                    <h2>Contact</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">🏠</div>
+                        <span>Fianarantsoa, Madagascar</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <a href="https://wa.me/261331616492" class="contact-link" target="_blank">033 16 164 92</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <a href="mailto:milantofrancia@gmail.com" class="contact-link">milantofrancia@gmail.com</a>
+                    </div>
+                </div>
 
-        <sec
-            <h2>Expériences Professionnelles</h2>
-            <div class="item">
-                <h3>Développeur Front-end - TechCorp</h3>
-                <span class="date">2025- Présent</span>
-                <ul>
-                    <li>Développement d'interfaces en React.js</li>
-                    <li>parle francais,anglais,allmand A1</li>
-                </ul>
-            </div>
-        </section>
+                <div class="section">
+                    <h2>Compétences Techniques</h2>
+                    <ul class="skills-grid">
+                        <li>Frontend : HTML5, CSS3, JavaScript (ES6+), React.js</li>
+                        <li>Backend : Node.js</li>
+                        <li>Outils : Git, Gestion de bases de données</li>
+                    </ul>
+                </div>
 
-        <section>
-            <h2>Compétences</h2>
-            <div class="skills">
-                <span class="badge">HTML5/CSS</span>
-                <span class="badge">JavaScript</span>
-                <span class="badge">React</span>
-                <span class="badge">Node.js</span>
+                <div class="section">
+                    <h2>Langues</h2>
+                    <ul class="languages">
+                        <li>Français : Courant</li>
+                        <li>Anglais : Intermédiaire</li>
+                        <li>Allemand : Notions</li>
+                    </ul>
+                </div>
             </div>
-        </section>
+
+            <div class="content">
+                <div class="section">
+                    <h2>Profil</h2>
+                    <p class="profile-text">
+                        Étudiant de 17 ans à l'École de Management et d'Innovation Technologique (EMIT), je suis un passionné d'informatique et des technologies web. Développeur Fullstack junior, je m'efforce de concevoir des solutions numériques performantes et intuitives.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Expériences Professionnelles</h2>
+                    <div class="experience-item">
+                        <div class="job-title">Développeur Front-end | TechCorp</div>
+                        <div class="period">Janvier 2025 – Présent</div>
+                        <p>Conception et développement d'interfaces utilisateur modernes et réactives (Responsive Design) avec React.js.</p>
+                        <p>Optimisation de l'expérience utilisateur et intégration de maquettes.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Formation</h2>
+                    <div class="education-item">
+                        <div class="job-title">École de Management et d'Innovation Technologique (EMIT)</div>
+                        <div class="period">Cursus en Informatique / Développement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
+
