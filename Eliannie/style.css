@@ -1,0 +1,25 @@
+h2{
+  font-family: arial,sans serif;
+  margin: 5px;
+  color:black;
+  z-index: 100;
+  overflow: auto;
+}
+body{
+  color:writh;
+  margin:25px;
+}
+p1,p2,p3,p4,p5,p6{
+ color:black;
+}
+h2{
+  color:red;
+  font-style: italic;
+}
+h1{
+  font-family: arial,sans serif;
+  position:auto;
+  align-self: 25;
+  margin: 10px;
+  padding: 2px;
+}
